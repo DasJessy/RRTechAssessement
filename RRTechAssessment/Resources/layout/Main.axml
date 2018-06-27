@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:id="@+id/mainLayout">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_content"
+        android:layout_below="@id/toolbar"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <Button
+            android:text="Choose a Text File"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOpenFile"
+            android:background="@color/primaryDark"
+            android:textColor="@color/buttonTextColor"
+            android:layout_margin="10dp" />
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtValue"
+            android:hint="Enter the word here (Ignore case)"
+            android:layout_margin="10dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSearch"
+                android:background="@color/primaryDark"
+                android:textColor="@color/buttonTextColor"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Results"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryDark"
+                android:textStyle="bold|italic"
+                android:layout_margin="20dp"
+                android:id="@+id/txtTitle"
+                android:textAlignment="center"
+                android:gravity="center" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:id="@+id/txtResult"
+                 android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/myTextBlack" />
+        </LinearLayout>
+        <Button
+            android:text="Clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnClearAll"
+            android:background="@color/primaryDark"
+            android:textColor="@color/buttonTextColor"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+</RelativeLayout>
