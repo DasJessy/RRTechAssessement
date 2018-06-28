@@ -1,12 +1,12 @@
 # RRTechAssessement
 
-The Project has been buit using Xamrarin.Android on VS2017 Community.
+The Project has been buit using Xamrarin.Android(C#) on Visual Studio 2017 Community.
 
 This should be debugged either on a phone or Android emulator.
 
-Alternatively, the APK has been uploaded on the APK folder for testing with the test.txt file.
+Alternatively, the APK and the test.txt file have been uploaded on the APK folder for rapid testing.
 
-#Additionnal packages :
+# Additionnal packages (can be automatically downloaded when rebuilding the project):
 Xam.Plugin.FilePicker.1.1.0
 Xamarin.Android.Support.Animated.Vector.Drawable.23.4.0.1
 Xamarin.Android.Support.Design.23.4.0.1
